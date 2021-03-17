@@ -4,18 +4,17 @@ import { Container,Row,Col,Alert } from 'react-bootstrap';
 
 class App extends Component {
   render() {
+      var i=1;
     return (
       <div className="App">
-        <Container>
+        <Container> 
         <Row>
     <Col sm={8}> 
     <Alert variant="success">
-  <Alert.Heading>Hey, nice to see you</Alert.Heading>
-  <p>
-    Aww yeah, you successfully read this important alert message. This example
-    text is going to run a bit longer so that you can see how spacing within an
-    alert works with this kind of content.
-  </p>
+  <Alert.Heading>//we cannt use if-else in JSX</Alert.Heading>
+ 
+  <h1>{i == 1 ? 'True!' : 'False'}</h1>
+ 
   <hr />
   <p className="mb-0">
     Whenever you need to, be sure to use margin utilities to keep things nice
@@ -25,11 +24,7 @@ class App extends Component {
     </Col>
     <Col sm={4}>sm=4</Col>
   </Row>
-  <Row>
-    <Col sm>sm=true</Col>
-    <Col sm>sm=true</Col>
-    <Col sm>sm=true</Col>
-  </Row>
+   
 </Container>
       </div>
     );

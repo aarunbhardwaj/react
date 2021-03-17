@@ -1,12 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import NestedElements from './examples/NestedElements';
+import Expressions from './examples/Expressions';
+import Styles from './examples/Styling';
+import Conditions from './examples/Conditions';
+import Stateless from './examples/Stateless';
+import Stateful from './examples/Stateful';
 import reportWebVitals from './reportWebVitals';
+import Expression from './examples/Expressions';
+import PropsExample from './examples/PropsExample';
+import PropsValidation from './examples/PropsValidation';
+import SetStateExample from './examples/SetStateExample';
+import ForceUpdateExample from './examples/ForceUpdateExample';
+import FindDomNode from './examples/FindDomNode';
+import LifeCycleMethods from './examples/LifeCycleMethods';
+import LiveUpdate from './forms/LiveUpdate';
+import UpdateStateFromChildComponent from './forms/UpdateStateFromChildComponent';
+import EventsExample from './forms/EventsExample';
+import ChildEventsUpdateParent from './forms/ChildEventsUpdateParent';
+import KeysExample from './forms/KeysExample';
+import RouteExample from './forms/RouteExample';
+import TodoApp from './examples/TodoApp';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    
+    <TodoApp />
   </React.StrictMode>,
   document.getElementById('root')
 );
